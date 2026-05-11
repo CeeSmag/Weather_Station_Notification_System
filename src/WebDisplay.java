@@ -8,7 +8,7 @@ public class WebDisplay implements Observer {
     private int updateType;
 
     public WebDisplay(Subject subject) {
-        subject.subscribeObserver(this).all();
+        subject.subscribeObserver(this).all(); // this here will subscribe the Observer to all notification.
     }
 
     @Override

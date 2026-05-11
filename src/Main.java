@@ -9,7 +9,7 @@ public class Main {
 
         weatherStation.on(5000); // the number is the refresh rate to fetch new data
         sleep(6000);
-        weatherStation.unsubscribeObserver(webDisplay).temperature();
+        weatherStation.unsubscribeObserver(webDisplay).temperature(); // [unsubscribeObserver().temperature()] this called method chaining
         sleep(6000);
         weatherStation.unsubscribeObserver(phoneDisplay).humidity();
         sleep(6000);
